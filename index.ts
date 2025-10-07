@@ -17,7 +17,7 @@ app.use(
   })
 );  
 
-// Create User
+
 app.post("/users/add", async (req: Request, res: Response) => {
   try {
     const { name } = req.body;
@@ -36,7 +36,7 @@ app.post("/users/add", async (req: Request, res: Response) => {
   }
 });
 
-// Get Users
+
 app.get("/users/get", async (req: Request, res: Response) => {
   try {
     const users = await userModel.find();
@@ -54,7 +54,6 @@ app.get("/users/get", async (req: Request, res: Response) => {
   }
 });
 
-// Update User
 app.put("/users/update/:id", async (req: Request, res: Response) => {
   try {
     const { name } = req.body;
@@ -83,7 +82,7 @@ app.put("/users/update/:id", async (req: Request, res: Response) => {
   }
 });
 
-// Delete User
+
 app.delete("/users/delete/:id", async (req: Request, res: Response) => {
   try {
     const user = await userModel.findByIdAndDelete(req.params.id);
