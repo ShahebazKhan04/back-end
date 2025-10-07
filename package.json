@@ -2,7 +2,7 @@
   "name": "back-end",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.ts",
+  "main": "src/index.ts",
   "type": "module",
   "scripts": {
   "dev": "nodemon --watch ./ --ext ts --exec ts-node index.ts",
