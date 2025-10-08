@@ -17,8 +17,6 @@ app.use(
   })
 );  
 
-// hello
-
 app.post("/users/add", async (req: Request, res: Response) => {
   try {
     const { name } = req.body;
