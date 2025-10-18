@@ -3,6 +3,8 @@ import type { Request, Response } from "express"; // only types
 import connectDb from "./db/connectDb.ts";
 import userModel from "./models/tbUserModel.ts";
 import cors from "cors";
+import dotenv from "dotenv"
+dotenv.config()
 
 const app = express();
 const port = 5000;
